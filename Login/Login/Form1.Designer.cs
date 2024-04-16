@@ -81,7 +81,6 @@
             txtLoginPassword.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txtLoginPassword.Location = new Point(101, 204);
             txtLoginPassword.Name = "txtLoginPassword";
-            txtLoginPassword.PasswordChar = '•';
             txtLoginPassword.Size = new Size(200, 25);
             txtLoginPassword.TabIndex = 3;
             // 
@@ -144,7 +143,6 @@
             txtSignUpPassword.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txtSignUpPassword.Location = new Point(501, 204);
             txtSignUpPassword.Name = "txtSignUpPassword";
-            txtSignUpPassword.PasswordChar = '•';
             txtSignUpPassword.Size = new Size(200, 25);
             txtSignUpPassword.TabIndex = 9;
             // 

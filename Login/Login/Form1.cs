@@ -19,14 +19,19 @@ namespace Login
                     MessageBox.Show("Welcome " + txtLoginUsername.Text + "!", "Login Succesfully");
                     txtLoginUsername.Text = "";
                     txtLoginPassword.Text = "";
-                    break;
+                    return;
                 }
-                else
-                {
-                    MessageBox.Show("Wrong Credentials.", "Login Failed");
-                    txtLoginUsername.Text = "";
-                    txtLoginPassword.Text = "";
-                }
+            }
+            if(txtLoginUsername.Text == "" && txtLoginPassword.Text == "")
+            {
+                MessageBox.Show("Enter Username and Password", "Enter");
+
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username and Password.", "Login Failed");
+                txtLoginUsername.Text = "";
+                txtLoginPassword.Text = "";
             }
 
         }
@@ -35,7 +40,7 @@ namespace Login
         {
             if(txtSignUpUsername.Text == "" || txtSignUpPassword.Text == "")
             {
-                MessageBox.Show("Enter Credentials", "Enter Credentials");
+                MessageBox.Show("Enter Username and Password", "Enter");
             }
             else
             {
@@ -51,9 +56,10 @@ namespace Login
                     }
                     else
                     {
-                        MessageBox.Show("This username is already taken!", "Enter Credentials");
+                        MessageBox.Show("This username is already taken!", "Error!");
                         txtSignUpUsername.Text = "";
                         txtSignUpPassword.Text = "";
+                        break;
                     }
                 }
             }
